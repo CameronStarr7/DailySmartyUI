@@ -1,5 +1,4 @@
-# React/Redux/Router Starter Project
+### put your assets here
 
-> Provided for the students of the [Bottega Code School](https://bottega.tech/)
-
-*Fork from [es6-webpack2-starter](https://github.com/micooz/es6-webpack2-starter)*
+1. images
+2. other standalone libraries(no npm support)
