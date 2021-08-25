@@ -9,19 +9,37 @@ class RecentPosts extends Component {
         this.props.fetchRecentPosts();
     }
 
+    renderPosts = function() {
+        const posts = this.props.recentPosts.map((post, index) => {
+            if(index < 3) {
+                return (
+                
+                    <li key={index}>
+                        {post.title}
+                    </li>
+                )
+            }
+        })
+        return posts
+    }
+
     render() {
         return (
             <div className='recent-posts'>
-                <l className='recent-posts_wrapper'>
+                <div className='recent-posts_wrapper'>
                     <div className='recent-posts_heading'>Recent Posts</div>
                     <ul className='recent-posts_posts'>
-                        <li>recent post 0</li>
-                        <li>recent post 1</li>
-                        <li>recent post 2</li>
+                        {this.renderPosts()}
                     </ul>
-                </l>
+                </div>
             </div>
         )
+    }
+}
+
+function mapStateToProps(state) {
+    return {
+        recentPosts: state.posts.recentPosts
     }
 }
 
