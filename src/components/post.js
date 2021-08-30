@@ -8,6 +8,7 @@ class Post extends Component {
         }) 
         return topics;
     }
+
     renderLinks() {
         let Links = this.props.post_links.map((post_link, index) => {
             <div className="post-link" key={index}>
@@ -19,6 +20,7 @@ class Post extends Component {
         })
         return Links;
     }
+    
     render() {
         if(this.props.type == 'recent') {
             return (
