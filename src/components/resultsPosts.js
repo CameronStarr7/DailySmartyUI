@@ -5,11 +5,11 @@ import { connect, Connect } from 'react-redux';
 class ResultsPosts extends Component {
     renderPosts() {
         const posts = this.props.posts.map((post, index) => {
-            return <Post key={index} {...post} />
+            return <Post type="results" key={index} {...post} />
         })
     }
 
-    
+
 
     render() {
         return (
