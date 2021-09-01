@@ -17,12 +17,10 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div>
-        <div>
+      <div className='home'>
           <Logo/>
           <SearchBar onSubmit={(query) => this.handleFormSubmit(query)} />
           <RecentPosts/>
-        </div>
       </div>
     );
   }
