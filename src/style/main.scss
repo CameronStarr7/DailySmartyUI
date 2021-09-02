@@ -33,7 +33,14 @@ body {
     justify-items: center;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 $color-gray-one: #666666;
 $color-gray-two: #838383;
 
 @import './searchBar';
+@import './recentPosts';
