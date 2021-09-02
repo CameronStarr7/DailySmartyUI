@@ -19,7 +19,7 @@ export default class Home extends Component {
     return (
       <div className='home'>
           <Logo/>
-          <SearchBar onSubmit={(query) => this.handleFormSubmit(query)} />
+          <SearchBar page='home' onSubmit={(query) => this.handleFormSubmit(query)} />
           <RecentPosts/>
       </div>
     );
