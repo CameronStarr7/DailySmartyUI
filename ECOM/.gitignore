@@ -1,8 +1,8 @@
-#nodejs
+# nodejs
 node_modules/
 npm-debug.log
 yarn-error.log
 
-#project
+# project
 dist/
 env.js
